@@ -2,6 +2,7 @@ package collections;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.List;
 
 public class ArrayListExample {
@@ -14,6 +15,7 @@ public class ArrayListExample {
 		studentsName.add("Rakesh"); // add will add element end of the list
 
 		List<Integer> list = new ArrayList<>();
+		//List<Integer> list = new LinkedList<>(); - all methods will be same as ArrayList
 		list.add(3);
 		list.add(4);
 		list.add(7);

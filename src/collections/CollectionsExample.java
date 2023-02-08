@@ -1,9 +1,34 @@
-JID8ChwJ4A">
-      <children xsi:type="basic:PartStack" xmi:id="_TSLVZaYBEe2fJID8ChwJ4A" elementId="org.eclipse.e4.primaryDataStack">
-        <tags>org.eclipse.e4.primaryDataStack</tags>
-        <tags>EditorStack</tags>
-        <tags>empty</tags>
-      </children>
-    </sharedElements>
-    <sharedElements xsi:type="basic:Part" xmi:id="_TSLVZqYBEe2fJID8ChwJ4A" elementId="org.eclipse.ui.navigator.ProjectExplorer" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Project Explorer" iconURI="platform:/plugin/org.eclipse.ui.navigator.resources/icons/full/eview16/resource_persp.png" tooltip="" closeable="true">
-      <persistedState key="originalCompatibilityViewClass" value="org.eclipse.ui.navigator.resources.ProjectE
+package collections;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+public class CollectionsExample {
+	public static void main(String[] args) {
+		
+		List<Integer> list = new ArrayList<>();
+		list.add(34);
+		list.add(34);
+		list.add(10);
+		list.add(2);
+		list.add(41);
+		list.add(17);
+		list.add(51);
+		
+		System.out.println("Min Element is = "+Collections.min(list));
+		System.out.println("Max Element is = "+Collections.max(list));
+		System.out.println("Freq of Element is = "+Collections.frequency(list, 34));
+		
+		//Sort the list
+		Collections.sort(list);
+		System.out.println(list);
+		
+		//Reverse the order of sorting
+		Collections.sort(list, Comparator.reverseOrder());
+		System.out.println(list);
+		
+
+	}
+}
